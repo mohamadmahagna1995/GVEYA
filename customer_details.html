@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <button onclick="window.location.href='track_collection.html'">متابعة الجباية</button>
+    
+  <title>تفاصيل الزبون</title>
+  <style>
+    /* ... الأنماط ... */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>تفاصيل الزبون</h1>
+
+  <div id="customerInfo"></div>
+
+  <h2>الفواتير/الدفعات</h2>
+  <table id="transactionsTable">
+    <thead>
+      <tr>
+        <th>النوع</th>
+        <th>القيمة</th>
+        <th>المرفق</th>
+        <th>ملاحظات</th> 
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

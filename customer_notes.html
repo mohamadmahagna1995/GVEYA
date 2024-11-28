@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <button onclick="window.location.href='track_collection.html'">متابعة الجباية</button>
+  <title>ملاحظات الجباية</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>ملاحظات الجباية</h1>
+
+  <div id="customerInfo"></div>
+
+  <textarea id="notes" rows="10"></textarea>
+
+  <button id="saveNotes">حفظ الملاحظات</button>
+
+  <h2>الفواتير/الدفعات</h2>
+  <table id="transactionsTable">
+    <thead>
+      <tr>
+        <th>النوع</th>
+        <th>القيمة</th>
+        <th>المرفق</th>
+        <th>ملاحظات</th> 
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
